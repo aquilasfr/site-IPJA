@@ -11,8 +11,13 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.header {
+.container {
   width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.header {
   background-color: var(--color-secondary);
   height: 60px;
   display: -webkit-box;
@@ -24,6 +29,7 @@ body {
 }
 
 .social-medias {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -41,6 +47,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  text-align: right;
 }
 
 .section-wrapper {
