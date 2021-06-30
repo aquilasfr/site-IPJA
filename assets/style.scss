@@ -80,18 +80,18 @@ body {
                 border: none;
                 background-color: var(--color-primary-light);             
             }
-            &__button {
-                border: none;
-                padding-right: 25px;
-                font-size: var(--font-md);
-                background-color: var(--color-primary-light);
-                border-top-right-radius: var(--font-md);
-                border-bottom-right-radius: var(--font-md);
-                color: #ffff;
                 &__anchor {
+                    display: flex;
+                    text-decoration: none;
+                    align-items: center;
                     color: var(--anchor);
+                    padding-right: 25px;
+                    font-size: 30px;
+                    background-color: var(--color-primary-light);
+                    border-top-right-radius: var(--font-md);
+                    border-bottom-right-radius: var(--font-md);
+                    color: #ffff;
                 }                   
-            }
         }
     }
 }

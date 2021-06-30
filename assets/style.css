@@ -109,17 +109,20 @@ body {
   background-color: var(--color-primary-light);
 }
 
-.section-wrapper__nav__search__button {
-  border: none;
+.section-wrapper__nav__search__anchor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--anchor);
   padding-right: 25px;
-  font-size: var(--font-md);
+  font-size: 30px;
   background-color: var(--color-primary-light);
   border-top-right-radius: var(--font-md);
   border-bottom-right-radius: var(--font-md);
   color: #ffff;
-}
-
-.section-wrapper__nav__search__button__anchor {
-  color: var(--anchor);
 }
 /*# sourceMappingURL=style.css.map */
