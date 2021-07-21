@@ -1,15 +1,15 @@
 :root {
-  --color-primary-main: #429b6e;
-  --color-primary-light: #99d0b5;
+  --color-primary-main: #429b6f;
+  --color-primary-light: #97ccb2;
   --color-primaty-dark: #1b422f;
   --color-secondary: #454545;
   --anchor: #f5f5f5;
-  --font-lg: 20px;
+  --font-lg: 28px;
   --font-md: 16px;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -39,7 +39,6 @@ body {
 
 .social-medias__item {
   text-decoration: none;
-  color: red;
   font-size: 20px;
   font-weight: bold;
 }
@@ -141,6 +140,33 @@ body {
   border-top-right-radius: var(--font-md);
   border-bottom-right-radius: var(--font-md);
   color: #ffff;
+}
+
+.wrapper {
+  width: 100vh;
+}
+
+.wrapper__slider {
+  overflow-x: auto;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.wrapper__slider__item {
+  width: 34%;
+  height: 400px;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+}
+
+.wrapper__slider__item__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .section {
