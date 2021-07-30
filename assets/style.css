@@ -175,39 +175,45 @@ body {
 
 .section {
   width: 100%;
-  height: 400px;
   background-color: var(--color-primary-main);
+  padding: 45px 0;
 }
 
-.section__title {
-  color: white;
-  font-size: var(--font-lg);
+.section__title-schedule {
   text-align: center;
-  padding: 30px;
+  padding-bottom: 30px;
+  color: var(--anchor);
+  font-size: 40px;
+  font-weight: bold;
 }
 
-.section__wrapper {
-  width: 80%;
-  margin: 0 auto;
+.section__table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 200px;
-  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section__table__row {
+  color: var(--anchor);
   font-size: var(--font-lg);
-  font-weight: bold;
+}
+
+.section__table__row__header {
+  font-weight: bolder;
+  padding-bottom: 15px;
+}
+
+.section__table__row__data {
+  padding: 5px 28px;
 }
 
 .chanel__img-wrapper {
   width: 100%;
   height: 460px;
-  background-image: url("/img/Icon/youtube.jpeg");
+  background-image: url("/img/Icon/bg-youtube.jpeg");
   background-size: cover;
   background-position: center;
 }
@@ -226,5 +232,10 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: var(--anchor);
+}
+
+.footer__paragraph {
+  width: 40%;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
