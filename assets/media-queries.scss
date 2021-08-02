@@ -44,5 +44,12 @@
     .chanel {
         display: none;
     }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 7px;
+        flex-direction: column;
+    }
 }
 
