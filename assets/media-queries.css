@@ -42,13 +42,19 @@
   .chanel {
     display: none;
   }
+  .whatsapp-link {
+    bottom: 20px;
+  }
+  .fa-whatsapp {
+    margin-top: 16px;
+  }
   .footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    font-size: 7px;
+    font-size: 8px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
