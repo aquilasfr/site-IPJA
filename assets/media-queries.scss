@@ -45,10 +45,18 @@
         display: none;
     }
 
+    .whatsapp-link {
+        bottom: 20px;
+    }
+    
+    .fa-whatsapp {
+        margin-top: 16px;
+    }
+
     .footer {
         display: flex;
         flex-wrap: wrap;
-        font-size: 7px;
+        font-size: 8px;
         flex-direction: column;
     }
 }
