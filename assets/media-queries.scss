@@ -1,25 +1,34 @@
 @media screen and (max-width: 600px) {
+    .header {
+        display: none;
+    }
     .section-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
         width: 100%;
-        height: 100vh;
+        height: 22vh;
         &__title {
             width: 50%;
         }
         &__nav {
             width: 50%;
             &__list {
-                display: flex;
-                flex-direction: column;
+                display: none;
 
             }
             &__search {
                 padding-right: 22px;
+                &__input {
+                    display: none;
+                }
+                &__anchor {
+                 background-color: var(--anchor);
+                 color: darkgrey;
+                 font-size: 38px;
+                }
             }
         }
     }    
-}
-
-@media screen and (max-width: 600px) {
     
     .slider {
         &__item {
@@ -27,3 +36,4 @@
         }
     }
 }
+
