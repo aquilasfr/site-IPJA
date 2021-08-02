@@ -291,6 +291,11 @@ body {
 
 .footer__paragraph {
   font-weight: bold;
+}
+
+.footer__paragraph--street {
   color: #1ccc99;
+  font-size: 8px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

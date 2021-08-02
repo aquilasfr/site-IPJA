@@ -221,6 +221,10 @@ body {
     color: var(--anchor);
     &__paragraph {
         font-weight: bold;
+    }
+    &__paragraph--street {
         color: #1ccc99;
+        font-size: 8px;
+        font-weight: bold;
     }
 }
