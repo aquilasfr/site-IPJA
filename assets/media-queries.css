@@ -33,8 +33,14 @@
     color: darkgrey;
     font-size: 38px;
   }
-  .slider__item {
-    width: 100%;
+  .wrapper__slider {
+    height: 60vh;
+  }
+  .section__table__row {
+    font-size: var(--font-md);
+  }
+  .chanel {
+    display: none;
   }
 }
 /*# sourceMappingURL=media-queries.css.map */

@@ -29,11 +29,20 @@
             }
         }
     }    
-    
-    .slider {
-        &__item {
-            width: 100%;
+    .wrapper {
+        &__slider {
+            height: 60vh;
         }
+    }
+    .section {
+        &__table {
+            &__row {
+                font-size: var(--font-md);
+            }
+        }
+    }
+    .chanel {
+        display: none;
     }
 }
 
