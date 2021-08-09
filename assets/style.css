@@ -72,7 +72,7 @@ body {
 
 .section-wrapper__title {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
 }
 
 .section-wrapper__title--logo {
@@ -158,7 +158,9 @@ body {
 
 .wrapper__slider__item {
   width: 100%;
-  height: 650px;
+  height: 390px;
+  background-size: cover;
+  background-position: center;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
@@ -166,11 +168,16 @@ body {
   pointer-events: none;
 }
 
-.wrapper__slider__item__img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.wrapper__slider__item.shepherd {
+  background-image: url("/img/carousel/atendimento-pastoral.jpeg");
+}
+
+.wrapper__slider__item.medias {
+  background-image: url("/img/carousel/midias.jpeg");
+}
+
+.wrapper__slider__item.ebd {
+  background-image: url("/img/carousel/EBD.jpg");
 }
 
 .section {
@@ -291,6 +298,12 @@ body {
 
 .footer__paragraph {
   font-weight: bold;
+  font-size: 18px;
+}
+
+.footer__paragraph--street {
   color: #1ccc99;
+  font-size: 18px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
