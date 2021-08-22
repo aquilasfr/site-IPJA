@@ -137,17 +137,25 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            &.live {
+                background-image: url("/img/carousel/live-img.jpeg");
+                background-size: cover;
+            }
             &.shepherd {
                 background-image: url("/img/carousel/atendimento-pastoral.jpeg");
+                background-size: cover;
             }
             &.medias {
                 background-image: url("/img/carousel/midias.jpeg");
+                background-size: cover;
             }
             &.ebd {
                 background-image: url("/img/carousel/EBD.jpg");
+                background-size: cover;
             }
             &.spotify {
                 background-image: url("/img/carousel/Spotify-img.jpeg");
+                background-size: cover;
             }
             &__text {
                 width: 100%;
@@ -155,13 +163,13 @@ body {
                 margin: 0 auto;
                 color: var(--anchor);
                 & h3 {
-                    font-size: 90px;
+                    font-size: 113px;
                     font-weight: 600;
                 }
                 &__row {
                     border: solid 1px;
                     margin: 15px 0;
-                    width: 67%;
+                    width: 90%;
                 }
                 & p {
                     font-size: 40px;
