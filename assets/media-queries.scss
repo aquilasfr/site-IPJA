@@ -13,8 +13,33 @@
         &__nav {
             width: 50%;
             &__list {
-                display: none;
-
+                position: absolute;
+                right: -90%;
+                top: 0;
+                display: flex;
+                flex-direction: column;
+                z-index: 2;
+                background-color: #f3f3f3;
+                width: 90%;
+                height: 100vh;
+                margin-bottom: 40px;
+                transition: all 1s ease-in-out;
+                & .i {
+                    color: #468569;
+                    font-size: 2em;
+                }
+                &__item {
+                    padding: 10px;
+                    &:first-of-type {
+                    text-align: right
+                    }
+                    &:last-of-type a {
+                        font-size: .9em;
+                    }
+                    &:last-of-type {
+                        margin-top: 3em;
+                    }
+                }
             }
             &__search {
                 padding-right: 22px;
@@ -22,11 +47,18 @@
                     display: none;
                 }
                 &__anchor {
-                 background-color: var(--anchor);
-                 color: darkgrey;
+                 background-color: white;
+                 color: var(--anchor);
                  font-size: 38px;
                 }
             }
+        }
+        .fas.fa-bars {
+            font-size: 2em;
+            color: #c4c4c4;
+        }
+        .sidebar-active {
+            right: 0 !important;
         }
     }    
     .wrapper {
