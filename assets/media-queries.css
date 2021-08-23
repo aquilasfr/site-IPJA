@@ -75,6 +75,24 @@
   .wrapper__slider {
     height: 60vh;
   }
+  .wrapper__slider__item__text {
+    padding: 0 12px;
+  }
+  .wrapper__slider__item__text h3 {
+    font-size: 60px;
+    font-weight: 600;
+  }
+  .wrapper__slider__item p {
+    font-size: 24px;
+  }
+  .wrapper__slider .owl-dots {
+    position: absolute;
+    bottom: -51px;
+    left: 50%;
+  }
+  .section {
+    padding: 72px 0;
+  }
   .section__table__row {
     font-size: var(--font-md);
   }
@@ -98,6 +116,14 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .footer__paragraph--street {
+    font-size: 12px;
+    padding: 0 5px;
+  }
+  .footer__paragraph {
+    font-size: 12px;
+    padding: 0 5px;
   }
 }
 /*# sourceMappingURL=media-queries.css.map */

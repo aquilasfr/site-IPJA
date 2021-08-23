@@ -64,9 +64,27 @@
     .wrapper {
         &__slider {
             height: 60vh;
+            &__item {
+                &__text {
+                    padding:0 12px;
+                & h3 {
+                    font-size: 60px;
+                    font-weight: 600;
+                    }
+                }
+                & p {
+                    font-size: 24px;
+                }
+            }
+            & .owl-dots {
+                position: absolute;
+                bottom: -51px;
+                left: 50%;
+            }
         }
     }
     .section {
+        padding: 72px 0;
         &__table {
             &__row {
                 font-size: var(--font-md);
@@ -90,6 +108,14 @@
         flex-wrap: wrap;
         font-size: 8px;
         flex-direction: column;
+        &__paragraph--street {
+            font-size: 12px;
+            padding: 0 5px;
+        }
+        &__paragraph {
+            font-size: 12px;
+            padding: 0 5px;
+        }
     }
 }
 
