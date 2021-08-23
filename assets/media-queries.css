@@ -87,7 +87,6 @@
   }
   .wrapper__slider .owl-dots {
     position: absolute;
-    bottom: -51px;
     left: 50%;
   }
   .section {
