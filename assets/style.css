@@ -3,7 +3,7 @@
   --color-primary-light: #97ccb2;
   --color-primaty-dark: #1b422f;
   --color-secondary: #454545;
-  --anchor: #f5f5f5;
+  --anchor: #c4c4c4;
   --font-lg: 28px;
   --font-md: 16px;
 }
@@ -66,7 +66,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: var(--anchor);
   margin: 0 auto;
 }
 
@@ -142,47 +141,132 @@ body {
   color: #ffff;
 }
 
+.master {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.master__row {
+  display: block;
+  height: 2px;
+  width: 38%;
+  margin-top: 34px;
+  background-color: var(--anchor);
+  margin-right: 576px;
+  margin-bottom: 14px;
+}
+
 .wrapper {
   width: 100%;
 }
 
 .wrapper__slider {
-  overflow-x: auto;
-  -ms-scroll-snap-type: x mandatory;
-      scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .wrapper__slider__item {
-  width: 100%;
-  height: 390px;
-  background-size: cover;
-  background-position: center;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
-  scroll-snap-align: start;
+  height: 500px;
   pointer-events: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper__slider__item.live {
+  background-image: url("/img/carousel/live-img.jpeg");
+  background-size: cover;
 }
 
 .wrapper__slider__item.shepherd {
   background-image: url("/img/carousel/atendimento-pastoral.jpeg");
+  background-size: cover;
 }
 
 .wrapper__slider__item.medias {
   background-image: url("/img/carousel/midias.jpeg");
+  background-size: cover;
 }
 
 .wrapper__slider__item.ebd {
   background-image: url("/img/carousel/EBD.jpg");
+  background-size: cover;
+}
+
+.wrapper__slider__item.spotify {
+  background-image: url("/img/carousel/Spotify-img.jpeg");
+  background-size: cover;
+}
+
+.wrapper__slider__item__text {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  color: var(--anchor);
+}
+
+.wrapper__slider__item__text h3 {
+  font-size: 113px;
+  font-weight: 600;
+}
+
+.wrapper__slider__item__text__row {
+  border: solid 1px;
+  margin: 15px 0;
+  width: 90%;
+}
+
+.wrapper__slider__item__text p {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.wrapper__slider .owl-dots {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.wrapper__slider .owl-dots .owl-dot {
+  width: 15px;
+  height: 15px;
+  background-color: var(--anchor);
+  border-radius: 50%;
+  margin: 0 7px;
+}
+
+.wrapper__slider .owl-dots .owl-dot.active {
+  background-color: #b2ce7b;
 }
 
 .section {
   width: 100%;
-  background-color: var(--color-primary-main);
+  background-color: #97ccb2;
   padding: 45px 0;
 }
 
@@ -229,7 +313,7 @@ body {
   font-size: 68px;
   width: 50%;
   margin: 0 auto;
-  height: 400px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

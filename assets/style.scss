@@ -3,7 +3,7 @@
     --color-primary-light: #97ccb2;
     --color-primaty-dark: #1b422f;
     --color-secondary: #454545;
-    --anchor: #f5f5f5;
+    --anchor: #c4c4c4;
     --font-lg: 28px;
     --font-md: 16px;
 }
@@ -49,7 +49,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: var(--anchor);
     margin: 0 auto;
     &__title {
         width: 100%;
@@ -108,30 +107,90 @@ body {
     }
 }
 
+.master {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    &__row {
+        display: block;
+        height: 2px;
+        width: 38%;
+        margin-top: 34px;
+        background-color: var(--anchor);
+        margin-right: 576px;
+        margin-bottom: 14px;
+    }
+}
+
 .wrapper {
     width: 100%;
     &__slider {
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth; 
+        margin: 0 auto;
         display: flex;
-        
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         &__item {
-            width: 100%;
-            height: 390px;
-            background-size: cover;
-            background-position: center;
-            flex: none;
-            scroll-snap-align: start;
+            height: 500px;
             pointer-events: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.live {
+                background-image: url("/img/carousel/live-img.jpeg");
+                background-size: cover;
+            }
             &.shepherd {
                 background-image: url("/img/carousel/atendimento-pastoral.jpeg");
+                background-size: cover;
             }
             &.medias {
                 background-image: url("/img/carousel/midias.jpeg");
+                background-size: cover;
             }
             &.ebd {
                 background-image: url("/img/carousel/EBD.jpg");
+                background-size: cover;
+            }
+            &.spotify {
+                background-image: url("/img/carousel/Spotify-img.jpeg");
+                background-size: cover;
+            }
+            &__text {
+                width: 100%;
+                max-width: 960px;
+                margin: 0 auto;
+                color: var(--anchor);
+                & h3 {
+                    font-size: 113px;
+                    font-weight: 600;
+                }
+                &__row {
+                    border: solid 1px;
+                    margin: 15px 0;
+                    width: 90%;
+                }
+                & p {
+                    font-size: 40px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        & .owl-dots {
+            position: absolute;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            & .owl-dot {
+                width: 15px;
+                height: 15px;
+                background-color: var(--anchor);
+                border-radius: 50%;
+                margin: 0 7px;
+                &.active {
+                    background-color:#b2ce7b;
+                    ;
+                }         
             }
         }
         
@@ -141,7 +200,7 @@ body {
 
 .section {
     width: 100%;
-    background-color: var(--color-primary-main);
+    background-color: #97ccb2;
     padding: 45px 0;
     &__title-schedule {
         text-align: center;
@@ -178,7 +237,7 @@ body {
             font-size: 68px;
             width: 50%;
             margin: 0 auto;
-            height: 400px;
+            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
