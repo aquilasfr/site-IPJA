@@ -30,15 +30,12 @@
                 }
                 &__item {
                     padding: 10px;
-                    &:first-of-type {
-                    text-align: right
-                    }
-                    &:last-of-type a {
-                        font-size: .9em;
-                    }
-                    &:last-of-type {
-                        margin-top: 3em;
-                    }
+                }
+                & p {
+                    color: #468569;
+                    font-weight: 600;
+                    font-size: 20px;
+                    padding: 79px 13px;
                 }
             }
             &__search {
@@ -55,7 +52,9 @@
         }
         .fas.fa-bars {
             font-size: 2em;
+            text-align: right;
             color: #c4c4c4;
+            padding: 20px 11px;
         }
         .sidebar-active {
             right: 0 !important;
