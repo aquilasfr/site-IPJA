@@ -62,6 +62,12 @@ body {
         &__list {
             display: flex;
             margin-bottom: 40px;
+            .fa-bars {
+                display: none;
+            }
+            & p {
+                display: none;
+            }
             &__item {
                 padding: 10px;
                 &__anchor {
@@ -138,23 +144,23 @@ body {
             justify-content: center;
             align-items: center;
             &.live {
-                background-image: url("/img/carousel/live-img.jpeg");
+                background-image: url("../img/carousel/live-img.jpeg");
                 background-size: cover;
             }
             &.shepherd {
-                background-image: url("/img/carousel/atendimento-pastoral.jpeg");
+                background-image: url("../img/carousel/atendimento-pastoral.jpeg");
                 background-size: cover;
             }
             &.medias {
-                background-image: url("/img/carousel/midias.jpeg");
+                background-image: url("../img/carousel/midias.jpeg");
                 background-size: cover;
             }
             &.ebd {
-                background-image: url("/img/carousel/EBD.jpg");
+                background-image: url("../img/carousel/EBD.jpg");
                 background-size: cover;
             }
             &.spotify {
-                background-image: url("/img/carousel/Spotify-img.jpeg");
+                background-image: url("../img/carousel/Spotify-img.jpeg");
                 background-size: cover;
             }
             &__text {
