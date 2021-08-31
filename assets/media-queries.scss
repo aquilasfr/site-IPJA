@@ -67,25 +67,27 @@
                 &__text {
                     padding:0 12px;
                 & h3 {
-                    font-size: 60px;
+                    font-size: 2rem;
                     font-weight: 600;
                     }
                 }
                 & p {
-                    font-size: 24px;
+                    font-size: 1.2rem;
                 }
             }
             & .owl-dots {
                 position: absolute;
                 left: 50%;
+                margin-bottom: -90px;
             }
         }
     }
     .section {
-        padding: 72px 0;
-        &__table {
-            &__row {
-                font-size: var(--font-md);
+        padding: 130px 0;
+        &__list {
+            &__item {
+                font-size: 1.4rem;
+                line-height: 2rem;
             }
         }
     }
@@ -107,11 +109,11 @@
         font-size: 8px;
         flex-direction: column;
         &__paragraph--street {
-            font-size: 12px;
+            font-size: 0.5rem;
             padding: 0 5px;
         }
         &__paragraph {
-            font-size: 12px;
+            font-size: 0.5rem;
             padding: 0 5px;
         }
     }
