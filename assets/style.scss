@@ -4,8 +4,10 @@
     --color-primaty-dark: #1b422f;
     --color-secondary: #454545;
     --anchor: #c4c4c4;
-    --font-lg: 28px;
-    --font-md: 16px;
+    --color-primary-text: #fdfdfd;
+    --font-lg: 1rem;
+    --font-md: 0.8rem;
+    --font-socialMedias: 1.5rem;
 }
 
 body {
@@ -33,10 +35,10 @@ body {
         font-size: 20px;
         font-weight: bold;
         &__anchor {
-            color: var(--anchor);
+            color: var(--color-primary-text);
             margin: 8px;
             text-decoration: none;
-            font-size: var(--font-lg);
+            font-size: var(--font-socialMedias);
         }
         &--spaced { 
             flex-grow: 1;
@@ -54,13 +56,19 @@ body {
         width: 100%;
         max-width: 400px;
         &--logo {
-            width: 80%;
+            width: 50%;
         }
     }
     &__nav {
         &__list {
             display: flex;
-            margin-bottom: 40px;
+            margin-bottom: 10px;
+            .fa-bars {
+                display: none;
+            }
+            & p {
+                display: none;
+            }
             &__item {
                 padding: 10px;
                 &__anchor {
@@ -80,7 +88,7 @@ body {
             display: flex;
             justify-content: center;
             &__input {
-                padding: 20px;
+                padding: 12px;
                 width: 70%;
                 border-top-left-radius: var(--font-md);
                 border-bottom-left-radius: var(--font-md);
@@ -97,7 +105,7 @@ body {
                 align-items: center;
                 color: var(--anchor);
                 padding-right: 25px;
-                font-size: 30px;
+                font-size: 20px;
                 background-color: var(--color-primary-light);
                 border-top-right-radius: var(--font-md);
                 border-bottom-right-radius: var(--font-md);
@@ -137,32 +145,32 @@ body {
             justify-content: center;
             align-items: center;
             &.live {
-                background-image: url("/img/carousel/live-img.jpeg");
+                background-image: url("../img/carousel/live-img.jpeg");
                 background-size: cover;
             }
             &.shepherd {
-                background-image: url("/img/carousel/atendimento-pastoral.jpeg");
+                background-image: url("../img/carousel/atendimento-pastoral.jpeg");
                 background-size: cover;
             }
             &.medias {
-                background-image: url("/img/carousel/midias.jpeg");
+                background-image: url("../img/carousel/midias.jpeg");
                 background-size: cover;
             }
             &.ebd {
-                background-image: url("/img/carousel/EBD.jpg");
+                background-image: url("../img/carousel/EBD.jpg");
                 background-size: cover;
             }
             &.spotify {
-                background-image: url("/img/carousel/Spotify-img.jpeg");
+                background-image: url("../img/carousel/Spotify-img.jpeg");
                 background-size: cover;
             }
             &__text {
                 width: 100%;
                 max-width: 960px;
                 margin: 0 auto;
-                color: var(--anchor);
+                color: var(--color-primary-text);
                 & h3 {
-                    font-size: 113px;
+                    font-size: 3rem;
                     font-weight: 600;
                 }
                 &__row {
@@ -171,20 +179,20 @@ body {
                     width: 90%;
                 }
                 & p {
-                    font-size: 40px;
+                    font-size: 1.3rem;
                     margin-bottom: 10px;
                 }
             }
         }
         & .owl-dots {
             position: absolute;
-            bottom: 5px;
+            bottom: 25px;
             left: 50%;
             transform: translateX(-50%);
             & .owl-dot {
                 width: 15px;
                 height: 15px;
-                background-color: var(--anchor);
+                background-color: var(--color-primary-text);
                 border-radius: 50%;
                 margin: 0 7px;
                 &.active {
@@ -205,23 +213,16 @@ body {
     &__title-schedule {
         text-align: center;
         padding-bottom: 30px;
-        color: var(--anchor);
-        font-size: 40px;
+        color: var(--color-primary-text);
+        font-size: 30px;
         font-weight: bold;
     }
-    &__table {
-        display: flex;
-        justify-content: center;
-        &__row {
-            color: var(--anchor);
-            font-size: var(--font-lg);
-            &__header {
-                font-weight: bolder;
-                padding-bottom: 15px;
-            }
-            &__data {
-                padding: 5px 28px;    
-            }            
+    &__list {
+        text-align: center;
+        &__item {
+            margin-bottom: 16px;
+            color: var(--color-primary-text);
+            font-size: 1.3rem;
         }
     }
 }
@@ -230,7 +231,7 @@ body {
     &__img-wrapper {
         width: 100%;
         height: 390px;
-        background-image: url("/img/Icon/bg-youtube.jpeg");
+        background-image: url("../img/Icon/bg-youtube.jpeg");
         background-size: cover;
         background-position: center;
         &__text {
@@ -245,14 +246,15 @@ body {
             text-align: center;
             &__anchor {
                 text-decoration: none;
-                color: var(--anchor);
+                color: var(--color-primary-text);
             }
             &__title {
                 margin: 20px 0;
                 font-weight: 600;
+                font-size: 3rem;
             }
             &__paragraph {
-                font-size: 45px;
+                font-size: 1.3rem;
             }
         }
     }    
@@ -285,14 +287,14 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: var(--anchor);
+    color: var(--color-primary-text);
     &__paragraph {
         font-weight: bold;
-        font-size: 18px;
+        font-size: 0.8rem;
     }
     &__paragraph--street {
         color: #1ccc99;
-        font-size: 18px;
+        font-size: 0.8rem;
         font-weight: bold;
     }
 }

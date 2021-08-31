@@ -45,14 +45,11 @@
   .section-wrapper__nav__list__item {
     padding: 10px;
   }
-  .section-wrapper__nav__list__item:first-of-type {
-    text-align: right;
-  }
-  .section-wrapper__nav__list__item:last-of-type a {
-    font-size: .9em;
-  }
-  .section-wrapper__nav__list__item:last-of-type {
-    margin-top: 3em;
+  .section-wrapper__nav__list p {
+    color: #468569;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 79px 13px;
   }
   .section-wrapper__nav__search {
     padding-right: 22px;
@@ -67,13 +64,32 @@
   }
   .section-wrapper .fas.fa-bars {
     font-size: 2em;
+    text-align: right;
     color: #c4c4c4;
+    padding: 20px 11px;
   }
   .section-wrapper .sidebar-active {
     right: 0 !important;
   }
   .wrapper__slider {
     height: 60vh;
+  }
+  .wrapper__slider__item__text {
+    padding: 0 12px;
+  }
+  .wrapper__slider__item__text h3 {
+    font-size: 60px;
+    font-weight: 600;
+  }
+  .wrapper__slider__item p {
+    font-size: 24px;
+  }
+  .wrapper__slider .owl-dots {
+    position: absolute;
+    left: 50%;
+  }
+  .section {
+    padding: 72px 0;
   }
   .section__table__row {
     font-size: var(--font-md);
@@ -98,6 +114,14 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .footer__paragraph--street {
+    font-size: 12px;
+    padding: 0 5px;
+  }
+  .footer__paragraph {
+    font-size: 12px;
+    padding: 0 5px;
   }
 }
 /*# sourceMappingURL=media-queries.css.map */
