@@ -290,6 +290,7 @@ body {
 
 .section__list {
   text-align: center;
+  padding: 0 2rem;
 }
 
 .section__list__item {
@@ -380,12 +381,12 @@ body {
 
 .footer__paragraph {
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .footer__paragraph--street {
   color: #1ccc99;
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
