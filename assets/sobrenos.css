@@ -1,0 +1,121 @@
+@charset "UTF-8";
+.shadow {
+  width: 100%;
+  height: 100px;
+  background: #d4d4d4;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(9%, #d4d4d4), color-stop(37%, #f0f0f0), color-stop(66%, #f7f7f7), color-stop(97%, white));
+  background: linear-gradient(180deg, #d4d4d4 9%, #f0f0f0 37%, #f7f7f7 66%, white 97%);
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main__our-history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../img/Icon/história.jpeg");
+  background-size: cover;
+  height: 250px;
+}
+
+.main__our-history__title {
+  color: var(--color-primary-text);
+  font-size: 5rem;
+}
+
+.main__paragraph {
+  padding: 50px 0;
+  font-size: 2rem;
+}
+
+.main .start {
+  text-align: center;
+  color: var(--color-primary-main);
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.main .grid-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+
+.main .grid-image__photos {
+  margin: 3px;
+}
+
+.main .grid-image__photos img {
+  width: 500px;
+}
+
+.main .our-mission {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../img/Icon/our-mission.jpeg");
+  background-size: cover;
+  height: 250px;
+}
+
+.main .our-mission__title {
+  color: var(--color-primary-text);
+  font-size: 5rem;
+}
+
+.master-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.master-start__row-green {
+  display: block;
+  height: 3px;
+  width: 38%;
+  background-color: var(--color-primary-main);
+  margin-bottom: 14px;
+  margin-top: 5px;
+}
+
+.footer-mission {
+  width: 100%;
+  height: 200px;
+  background-color: var(--color-secondary);
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--color-primary-text);
+}
+/*# sourceMappingURL=sobrenos.css.map */

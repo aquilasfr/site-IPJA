@@ -78,21 +78,23 @@
     padding: 0 12px;
   }
   .wrapper__slider__item__text h3 {
-    font-size: 60px;
+    font-size: 2rem;
     font-weight: 600;
   }
   .wrapper__slider__item p {
-    font-size: 24px;
+    font-size: 1.2rem;
   }
   .wrapper__slider .owl-dots {
     position: absolute;
     left: 50%;
+    margin-bottom: -90px;
   }
   .section {
-    padding: 72px 0;
+    padding: 130px 0;
   }
-  .section__table__row {
-    font-size: var(--font-md);
+  .section__list__item {
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
   .chanel {
     display: none;
@@ -116,11 +118,11 @@
             flex-direction: column;
   }
   .footer__paragraph--street {
-    font-size: 12px;
+    font-size: 0.7rem;
     padding: 0 5px;
   }
   .footer__paragraph {
-    font-size: 12px;
+    font-size: 0.7rem;
     padding: 0 5px;
   }
 }
