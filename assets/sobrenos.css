@@ -45,6 +45,8 @@
 }
 
 .main .grid-image {
+  width: 75%;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,7 +60,7 @@
 }
 
 .main .grid-image__photos img {
-  width: 500px;
+  width: 370px;
 }
 
 .main .our-mission {

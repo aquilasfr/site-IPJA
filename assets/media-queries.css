@@ -125,5 +125,53 @@
     font-size: 0.7rem;
     padding: 0 5px;
   }
+  /* Media-query page about-us */
+  .main {
+    width: 100%;
+    /* Media-query page agenda */
+  }
+  .main__our-history {
+    height: 100px;
+  }
+  .main__our-history__title {
+    font-size: 1.5rem;
+  }
+  .main__paragraph {
+    padding: 20px 7px 8px;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .main .start {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 12px;
+  }
+  .main .grid-image {
+    width: 100%;
+    margin: 5px;
+  }
+  .main .grid-image__photos {
+    margin: 0;
+  }
+  .main .grid-image__photos img {
+    width: 116px;
+    margin: 3px;
+  }
+  .main .our-mission {
+    height: 100px;
+  }
+  .main .our-mission__title {
+    font-size: 1.5rem;
+  }
+  .main .grid-timeTable {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main .grid-timeTable__banner {
+    width: 120px;
+    height: 120px;
+    margin: 8px;
+    background-color: var(--color-primary-main);
+  }
 }
 /*# sourceMappingURL=media-queries.css.map */
