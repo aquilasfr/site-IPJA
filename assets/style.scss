@@ -8,6 +8,7 @@
     --font-lg: 1rem;
     --font-md: 0.8rem;
     --font-socialMedias: 1.5rem;
+    --line-h-paragraph: 2rem;
 }
 
 body {
@@ -48,6 +49,9 @@ body {
 }
 
 .section-wrapper {
+    .fa-bars {
+        display: none;
+    }
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -57,16 +61,12 @@ body {
         max-width: 400px;
         &--logo {
             width: 50%;
-            
         }
     }
     &__nav {
         &__list {
             display: flex;
             margin-bottom: 10px;
-            .fa-bars {
-                display: none;
-            }
             & p {
                 display: none;
             }
@@ -187,7 +187,7 @@ body {
         }
         & .owl-dots {
             position: absolute;
-            bottom: 25px;
+            bottom: 10px;
             left: 50%;
             transform: translateX(-50%);
             & .owl-dot {

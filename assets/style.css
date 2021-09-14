@@ -8,6 +8,7 @@
   --font-lg: 1rem;
   --font-md: 0.8rem;
   --font-socialMedias: 1.5rem;
+  --line-h-paragraph: 2rem;
 }
 
 body {
@@ -71,6 +72,10 @@ body {
   margin: 0 auto;
 }
 
+.section-wrapper .fa-bars {
+  display: none;
+}
+
 .section-wrapper__title {
   width: 100%;
   max-width: 400px;
@@ -85,10 +90,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px;
-}
-
-.section-wrapper__nav__list .fa-bars {
-  display: none;
 }
 
 .section-wrapper__nav__list p {
@@ -256,7 +257,7 @@ body {
 
 .wrapper__slider .owl-dots {
   position: absolute;
-  bottom: 25px;
+  bottom: 10px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
