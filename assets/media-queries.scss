@@ -96,17 +96,15 @@
     }
 
     .footer {
+        height: 100px;
         display: flex;
-        flex-wrap: wrap;
-        font-size: 8px;
-        flex-direction: column;
+        flex-direction: row-reverse;
+        justify-content: space-around;
         &__paragraph--street {
-            font-size: 0.7rem;
-            padding: 0 5px;
+            display: none;
         }
         &__paragraph {
-            font-size: 0.7rem;
-            padding: 0 5px;
+            display: none;
         }
     }
     /* Media-query page about-us */
