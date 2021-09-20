@@ -51,8 +51,8 @@
   .section-wrapper__nav__list p {
     color: #468569;
     font-weight: 600;
-    font-size: 20px;
-    padding: 79px 13px;
+    font-size: 0.8rem;
+    padding: 8px;
   }
   .section-wrapper .fas.fa-bars {
     font-size: 2em;
@@ -112,6 +112,11 @@
   }
   .footer__paragraph {
     display: none;
+  }
+  .footer .social-medias {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   /* Media-query page about-us */
   .main {
