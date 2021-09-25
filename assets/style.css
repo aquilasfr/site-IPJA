@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --color-primary-main: #429b6f;
   --color-primary-light: #97ccb2;
@@ -384,6 +385,38 @@ body {
 
 .chanel__img-wrapper__text__paragraph {
   font-size: 1.3rem;
+}
+
+.mission {
+  background-image: url(../img/Icon/missões.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mission__title {
+  font-size: 6rem;
+  color: var(--color-primary-text);
+  font-weight: bold;
+  letter-spacing: 18px;
+}
+
+.mission__paragraph {
+  font-size: 3rem;
+  color: var(--color-primary-text);
 }
 
 .whatsapp-link {

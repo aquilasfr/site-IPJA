@@ -297,6 +297,27 @@ body {
     }    
 }
 
+.mission {
+    background-image: url(../img/Icon/missões.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__title {
+        font-size: 6rem;
+        color: var(--color-primary-text);
+        font-weight: bold;
+        letter-spacing: 18px;
+    }
+    &__paragraph {
+        font-size: 3rem;
+        color: var(--color-primary-text);
+    }
+}
+
 .whatsapp-link {
     position: fixed;
     width: 70px;
