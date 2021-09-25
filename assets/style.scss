@@ -209,22 +209,57 @@ body {
 
 .section {
     width: 100%;
+    height: 500px;
     background-color: #97ccb2;
-    padding: 45px 0;
-    &__title-schedule {
-        text-align: center;
-        padding-bottom: 30px;
-        color: var(--color-primary-text);
-        font-size: 30px;
-        font-weight: bold;
+    &__wrapper {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        &__schedule {
+            &__title {
+                font-size: 3rem;
+                font-weight: bold;
+                color: var(--color-primary-text);
+                padding: 40px 0;
+            }
+            &__monday {
+                font-size: 2rem;
+                font-weight: bold;
+                color: var(--color-primary-text);
+                padding-bottom: 30px;
+            }
+            &__paragraph {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: var(--color-primary-text);
+            }
+            &__paragraph--ebd {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: var(--color-primary-text);
+                padding-bottom: 30px;
+            }
+        }
     }
-    &__list {
-        text-align: center;
-        padding: 0 2rem;
-        &__item {
-            margin-bottom: 16px;
+    &__schedule-pd {
+        padding-top: 120px;
+        &__title {
+            font-size: 2rem;
+            font-weight: bold;
             color: var(--color-primary-text);
-            font-size: 1.3rem;
+            padding-bottom: 30px;
+        }
+        &__paragraph {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--color-primary-text);
+        }
+        &__paragraph--member {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--color-primary-text);
+            padding-bottom: 30px;
         }
     }
 }

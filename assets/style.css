@@ -276,27 +276,70 @@ body {
 
 .section {
   width: 100%;
+  height: 500px;
   background-color: #97ccb2;
-  padding: 45px 0;
 }
 
-.section__title-schedule {
-  text-align: center;
-  padding-bottom: 30px;
-  color: var(--color-primary-text);
-  font-size: 30px;
+.section__wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.section__wrapper__schedule__title {
+  font-size: 3rem;
   font-weight: bold;
-}
-
-.section__list {
-  text-align: center;
-  padding: 0 2rem;
-}
-
-.section__list__item {
-  margin-bottom: 16px;
   color: var(--color-primary-text);
-  font-size: 1.3rem;
+  padding: 40px 0;
+}
+
+.section__wrapper__schedule__monday {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-primary-text);
+  padding-bottom: 30px;
+}
+
+.section__wrapper__schedule__paragraph {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary-text);
+}
+
+.section__wrapper__schedule__paragraph--ebd {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary-text);
+  padding-bottom: 30px;
+}
+
+.section__schedule-pd {
+  padding-top: 120px;
+}
+
+.section__schedule-pd__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-primary-text);
+  padding-bottom: 30px;
+}
+
+.section__schedule-pd__paragraph {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary-text);
+}
+
+.section__schedule-pd__paragraph--member {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary-text);
+  padding-bottom: 30px;
 }
 
 .chanel__img-wrapper {
