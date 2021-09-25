@@ -4,11 +4,12 @@
     }
     .section-wrapper {
         display: flex;
+        justify-content: space-between;
         flex-direction: row-reverse;
         width: 100%;
         height: 22vh;
         &__title {
-            width: 50%;
+            width: 70%;
         }
         &__nav {
             width: 50%;
@@ -34,19 +35,8 @@
                 & p {
                     color: #468569;
                     font-weight: 600;
-                    font-size: 20px;
-                    padding: 79px 13px;
-                }
-            }
-            &__search {
-                padding-right: 22px;
-                &__input {
-                    display: none;
-                }
-                &__anchor {
-                 background-color: white;
-                 color: var(--anchor);
-                 font-size: 38px;
+                    font-size: 0.8rem;
+                    padding: 8px;                                           
                 }
             }
         }
@@ -55,14 +45,17 @@
             text-align: right;
             color: #c4c4c4;
             padding: 20px 11px;
+            display: block;
         }
         .sidebar-active {
             right: 0 !important;
         }
+    }
+    .shadow {
+        display: none;
     }    
     .wrapper {
         &__slider {
-            height: 60vh;
             &__item {
                 &__text {
                     padding:0 12px;
@@ -78,12 +71,11 @@
             & .owl-dots {
                 position: absolute;
                 left: 50%;
-                margin-bottom: -90px;
+                bottom: 10px;
             }
         }
     }
     .section {
-        padding: 130px 0;
         &__list {
             &__item {
                 font-size: 1.4rem;
@@ -104,17 +96,19 @@
     }
 
     .footer {
+        height: 100px;
         display: flex;
-        flex-wrap: wrap;
-        font-size: 8px;
-        flex-direction: column;
+        flex-direction: row-reverse;
+        justify-content: space-around;
         &__paragraph--street {
-            font-size: 0.7rem;
-            padding: 0 5px;
+            display: none;
         }
         &__paragraph {
-            font-size: 0.7rem;
-            padding: 0 5px;
+            display: none;
+        }
+        .social-medias {
+            display:flex;
+
         }
     }
     /* Media-query page about-us */
@@ -130,6 +124,7 @@
             padding: 20px 7px 8px;
             font-size: 1rem;
             text-align: center;
+            line-height: 2rem;
         }
         .start {
             font-size: 1.5rem;
@@ -138,12 +133,16 @@
         }
         .grid-image {
             width: 100%;
+            display: flex;
+            justify-content: center;
             margin: 5px;
             &__photos {
+                display: flex;
+                justify-content: center;
                 margin: 0;
                 img {
-                    width: 116px;
-                    margin: 3px;
+                    width: 90%;
+                    margin: 6px 0;
                 }
             }
         }
@@ -155,15 +154,19 @@
         }
         /* Media-query page agenda */
         .grid-timeTable {
-            width: 80%;
-            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
             &__banner {
                 width: 120px;
                 height: 120px;
                 margin: 8px;
                 background-color: var(--color-primary-main);
             }
-        } 
+        }
+    }
+    .schedule-week {
+        height: 470px;
     }
 
 }

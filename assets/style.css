@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --color-primary-main: #429b6f;
   --color-primary-light: #97ccb2;
@@ -8,6 +9,7 @@
   --font-lg: 1rem;
   --font-md: 0.8rem;
   --font-socialMedias: 1.5rem;
+  --line-h-paragraph: 2rem;
 }
 
 body {
@@ -71,6 +73,10 @@ body {
   margin: 0 auto;
 }
 
+.section-wrapper .fa-bars {
+  display: none;
+}
+
 .section-wrapper__title {
   width: 100%;
   max-width: 400px;
@@ -85,14 +91,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px;
-}
-
-.section-wrapper__nav__list .fa-bars {
-  display: none;
-}
-
-.section-wrapper__nav__list p {
-  display: none;
+  /* & p {
+                display: none;
+            } */
 }
 
 .section-wrapper__nav__list__item {
@@ -256,7 +257,7 @@ body {
 
 .wrapper__slider .owl-dots {
   position: absolute;
-  bottom: 25px;
+  bottom: 10px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -276,27 +277,70 @@ body {
 
 .section {
   width: 100%;
+  height: 500px;
   background-color: #97ccb2;
-  padding: 45px 0;
 }
 
-.section__title-schedule {
-  text-align: center;
-  padding-bottom: 30px;
-  color: var(--color-primary-text);
-  font-size: 30px;
+.section__wrapper {
+  width: 80%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.section__wrapper__schedule__title {
+  font-size: 3rem;
   font-weight: bold;
-}
-
-.section__list {
-  text-align: center;
-  padding: 0 2rem;
-}
-
-.section__list__item {
-  margin-bottom: 16px;
   color: var(--color-primary-text);
-  font-size: 1.3rem;
+  padding: 40px 0;
+}
+
+.section__wrapper__schedule__monday {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-primary-text);
+  padding-bottom: 30px;
+}
+
+.section__wrapper__schedule__paragraph {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary-text);
+}
+
+.section__wrapper__schedule__paragraph--ebd {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary-text);
+  padding-bottom: 30px;
+}
+
+.section__schedule-pd {
+  padding-top: 120px;
+}
+
+.section__schedule-pd__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-primary-text);
+  padding-bottom: 30px;
+}
+
+.section__schedule-pd__paragraph {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary-text);
+}
+
+.section__schedule-pd__paragraph--member {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary-text);
+  padding-bottom: 30px;
 }
 
 .chanel__img-wrapper {
@@ -343,6 +387,38 @@ body {
   font-size: 1.3rem;
 }
 
+.mission {
+  background-image: url(../img/Icon/missões.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mission__title {
+  font-size: 6rem;
+  color: var(--color-primary-text);
+  font-weight: bold;
+  letter-spacing: 18px;
+}
+
+.mission__paragraph {
+  font-size: 3rem;
+  color: var(--color-primary-text);
+}
+
 .whatsapp-link {
   position: fixed;
   width: 70px;
@@ -365,7 +441,7 @@ body {
 
 .footer {
   width: 100%;
-  height: 200px;
+  height: 20vh;
   background-color: var(--color-secondary);
   text-align: center;
   display: -webkit-box;
@@ -389,5 +465,9 @@ body {
   color: #1ccc99;
   font-size: 1rem;
   font-weight: bold;
+}
+
+.footer .social-medias {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */
