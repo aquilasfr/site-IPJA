@@ -34,7 +34,7 @@
 
 .main__paragraph {
   padding: 50px 0;
-  font-size: 2rem;
+  font-size: 1.2rem;
 }
 
 .main .start {
@@ -45,7 +45,7 @@
 }
 
 .main .grid-image {
-  width: 75%;
+  width: 70%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -60,7 +60,7 @@
 }
 
 .main .grid-image__photos img {
-  width: 370px;
+  width: 220px;
 }
 
 .main .our-mission {

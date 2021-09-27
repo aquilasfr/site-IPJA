@@ -1,9 +1,9 @@
 @charset "UTF-8";
 :root {
-  --color-primary-main: #429b6f;
+  --color-primary-main: #27714d;
   --color-primary-light: #97ccb2;
-  --color-primaty-dark: #1b422f;
-  --color-secondary: #454545;
+  --color-primary-dark: #1b422f;
+  --color-footer: #454545;
   --anchor: #c4c4c4;
   --color-primary-text: #fdfdfd;
   --font-lg: 1rem;
@@ -23,7 +23,7 @@ body {
 }
 
 .header {
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary-main);
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -108,7 +108,7 @@ body {
 }
 
 .section-wrapper__nav__list__item__anchor:hover {
-  color: var(--color-primaty-dark);
+  color: var(--color-primary-dark);
   text-decoration: underline;
 }
 
@@ -419,6 +419,75 @@ body {
   color: var(--color-primary-text);
 }
 
+.section-officers__title {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--color-primary-main);
+}
+
+.section-officers__list {
+  margin-bottom: 120px;
+}
+
+.section-officers__list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section-officers__list__item img {
+  width: 250px;
+  margin: 10px;
+}
+
+.section-officers__list__item div {
+  margin: 30px 40px;
+}
+
+.section-officers__list__item div p {
+  text-align: center;
+  color: var(--color-primary-main);
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.our-mission {
+  height: 400px;
+  background-color: #58b589;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--color-primary-text);
+  text-align: center;
+}
+
+.our-mission__title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.our-mission__paragraph {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
 .whatsapp-link {
   position: fixed;
   width: 70px;
@@ -440,34 +509,43 @@ body {
 }
 
 .footer {
-  width: 100%;
-  height: 20vh;
-  background-color: var(--color-secondary);
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 50vh;
+  background-color: var(--color-footer);
+  padding: 8px 0 0 80px;
   color: var(--color-primary-text);
 }
 
-.footer__paragraph {
+.footer__logo-ipbjda__title {
+  padding: 8px 0;
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
-.footer__paragraph--street {
-  color: #1ccc99;
+.footer__logo-ipbjda__paragraph {
   font-size: 1rem;
   font-weight: bold;
 }
 
-.footer .social-medias {
-  display: none;
+.footer__logo-ipbjda__title--social-medias {
+  padding: 30px 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.footer__logo-ipb {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding-right: 70px;
 }
 /*# sourceMappingURL=style.css.map */
