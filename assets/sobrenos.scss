@@ -23,7 +23,7 @@
     }
     &__paragraph {
         padding: 50px 0;
-        font-size: 2rem
+        font-size: 1.2rem
     }
     .start {
         text-align: center;
@@ -32,7 +32,7 @@
         font-weight: 600;
     }
     .grid-image {
-        width: 75%;
+        width: 70%;
         margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
@@ -40,7 +40,7 @@
         &__photos {
             margin: 3px;
             img {
-                width: 370px;
+                width: 220px;
             }
         }
     }
