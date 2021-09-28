@@ -66,7 +66,6 @@ body {
     &__nav {
         &__list {
             display: flex;
-            margin-bottom: 10px;
             /* & p {
                 display: none;
             } */
@@ -83,35 +82,16 @@ body {
                     }
                 }
             }
-        }
-
-        &__search {
-            display: flex;
-            justify-content: center;
-            &__input {
-                padding: 12px;
-                width: 70%;
-                border-top-left-radius: var(--font-md);
-                border-bottom-left-radius: var(--font-md);
-                font-size: var(--font-md);
-                border: none;
-                background-color: var(--color-primary-light);
-                &:focus {
-                    outline: none;
-                }           
+            &__sub-menu {
+                display: none;
+                background-color: whitesmoke;
+                padding: 8px;
+                color: var(--color-primary-main);
+                font-weight: 600;
+                &__list {
+                    padding: 5px 0;
+                }
             }
-            &__anchor {
-                display: flex;
-                text-decoration: none;
-                align-items: center;
-                color: var(--anchor);
-                padding-right: 25px;
-                font-size: 20px;
-                background-color: var(--color-primary-light);
-                border-top-right-radius: var(--font-md);
-                border-bottom-right-radius: var(--font-md);
-                color: #ffff;
-            }                   
         }
     }
 }
