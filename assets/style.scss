@@ -81,15 +81,26 @@ body {
                         text-decoration: underline;
                     }
                 }
+                &.dropdown:hover {
+                    & .sub-menu {
+                        display: block;
+                    }
+                }
             }
             &__sub-menu {
                 display: none;
                 background-color: whitesmoke;
                 padding: 8px;
-                color: var(--color-primary-main);
                 font-weight: 600;
                 &__list {
                     padding: 5px 0;
+                    &__anchor {
+                        text-decoration: none;
+                        color: var(--color-primary-main);
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
                 }
             }
         }
