@@ -84,6 +84,7 @@ body {
                 &.dropdown:hover {
                     & .sub-menu {
                         display: block;
+                        position: absolute;
                     }
                 }
             }
