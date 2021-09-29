@@ -89,6 +89,12 @@
   .chanel {
     display: none;
   }
+  .our-mission__title {
+    font-size: 2rem;
+  }
+  .our-mission__paragraph {
+    font-size: 1rem;
+  }
   .whatsapp-link {
     bottom: 20px;
   }
@@ -96,27 +102,14 @@
     margin-top: 16px;
   }
   .footer {
+    height: 100%;
+    padding: 20px;
+  }
+  .footer__logo-ipbjda img {
     height: 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
   }
-  .footer__paragraph--street {
-    display: none;
-  }
-  .footer__paragraph {
-    display: none;
-  }
-  .footer .social-medias {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .footer__logo-ipb img {
+    height: 100px;
   }
   /* Media-query page about-us */
   .main {
