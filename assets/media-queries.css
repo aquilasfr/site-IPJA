@@ -82,6 +82,18 @@
     left: 50%;
     bottom: 10px;
   }
+  .section__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section__wrapper__schedule h3 {
+    font-size: 2rem;
+  }
+  .section__wrapper__schedule-pd {
+    padding: 0;
+    margin: 0;
+  }
   .section__list__item {
     font-size: 1.4rem;
     line-height: 2rem;

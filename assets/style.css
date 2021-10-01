@@ -65,12 +65,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
 }
 
 .section-wrapper .fa-bars {
@@ -266,8 +266,6 @@ body {
 }
 
 .section__wrapper {
-  width: 80%;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,13 +491,21 @@ body {
 }
 
 .footer {
+  padding: 24px 0;
+  background-color: var(--color-footer);
+  color: var(--color-primary-text);
+}
+
+.footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50vh;
-  background-color: var(--color-footer);
-  padding: 8px 0 0 80px;
-  color: var(--color-primary-text);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .footer__logo-ipbjda__title {
@@ -520,15 +526,6 @@ body {
 }
 
 .footer__logo-ipb {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  height: 100px;
 }
 /*# sourceMappingURL=style.css.map */

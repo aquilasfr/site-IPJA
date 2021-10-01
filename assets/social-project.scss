@@ -80,3 +80,27 @@
     align-items: center;
     color: var(--color-primary-text);
 }
+
+
+.main {
+    &__paragraph-social-projects {
+        font-size: 1.5rem;
+        padding: 40px 0;
+        line-height: 1.5;
+    }
+    &__anchor-whatsapp {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: var(--color-primary-main);
+        font-weight: bold;
+    }
+}
+
+.paragraph-green {
+    color: var(--color-primary-main);
+    font-weight: 600;
+    font-style: italic;
+} 
+
+
+

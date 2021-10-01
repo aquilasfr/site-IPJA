@@ -75,6 +75,21 @@
             }
         }
     }
+
+    .section {
+        &__wrapper {
+            display: flex;
+            &__schedule {
+                h3 {
+                    font-size: 2rem;
+                }
+                &-pd {
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+        }   
+    }
     .section {
         &__list {
             &__item {
