@@ -53,9 +53,8 @@ body {
         display: none;
     }
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
     &__title {
         width: 100%;
         max-width: 400px;
@@ -66,7 +65,6 @@ body {
     &__nav {
         &__list {
             display: flex;
-            margin-bottom: 10px;
             /* & p {
                 display: none;
             } */
@@ -82,36 +80,29 @@ body {
                         text-decoration: underline;
                     }
                 }
+                &.dropdown:hover {
+                    & .sub-menu {
+                        display: block;
+                        position: absolute;
+                    }
+                }
             }
-        }
-
-        &__search {
-            display: flex;
-            justify-content: center;
-            &__input {
-                padding: 12px;
-                width: 70%;
-                border-top-left-radius: var(--font-md);
-                border-bottom-left-radius: var(--font-md);
-                font-size: var(--font-md);
-                border: none;
-                background-color: var(--color-primary-light);
-                &:focus {
-                    outline: none;
-                }           
+            &__sub-menu {
+                display: none;
+                background-color: whitesmoke;
+                padding: 8px;
+                font-weight: 600;
+                &__list {
+                    padding: 5px 0;
+                    &__anchor {
+                        text-decoration: none;
+                        color: var(--color-primary-main);
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
             }
-            &__anchor {
-                display: flex;
-                text-decoration: none;
-                align-items: center;
-                color: var(--anchor);
-                padding-right: 25px;
-                font-size: 20px;
-                background-color: var(--color-primary-light);
-                border-top-right-radius: var(--font-md);
-                border-bottom-right-radius: var(--font-md);
-                color: #ffff;
-            }                   
         }
     }
 }
@@ -212,8 +203,6 @@ body {
     height: 500px;
     background-color: #97ccb2;
     &__wrapper {
-        width: 80%;
-        margin: 0 auto;
         display: flex;
         justify-content: space-evenly;
         &__schedule {
@@ -390,11 +379,14 @@ body {
 }
 
 .footer {
-    display: flex;
-    height: 50vh;
+    padding: 24px 0;
     background-color: var(--color-footer);
-    padding: 8px 0 0 80px;
     color: var(--color-primary-text);
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
     &__logo-ipbjda {
         &__title {
             padding: 8px 0;
@@ -412,10 +404,6 @@ body {
         }
     }
     &__logo-ipb {
-        width: 100%;
-        display: flex;
-        align-items: end;
-        justify-content: end;
-        padding-right: 70px;
+        height: 100px;
     }
 }

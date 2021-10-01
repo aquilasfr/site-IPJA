@@ -65,12 +65,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
 }
 
 .section-wrapper .fa-bars {
@@ -90,7 +90,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 10px;
   /* & p {
                 display: none;
             } */
@@ -112,44 +111,29 @@ body {
   text-decoration: underline;
 }
 
-.section-wrapper__nav__search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.section-wrapper__nav__list__item.dropdown:hover .sub-menu {
+  display: block;
+  position: absolute;
 }
 
-.section-wrapper__nav__search__input {
-  padding: 12px;
-  width: 70%;
-  border-top-left-radius: var(--font-md);
-  border-bottom-left-radius: var(--font-md);
-  font-size: var(--font-md);
-  border: none;
-  background-color: var(--color-primary-light);
+.section-wrapper__nav__list__sub-menu {
+  display: none;
+  background-color: whitesmoke;
+  padding: 8px;
+  font-weight: 600;
 }
 
-.section-wrapper__nav__search__input:focus {
-  outline: none;
+.section-wrapper__nav__list__sub-menu__list {
+  padding: 5px 0;
 }
 
-.section-wrapper__nav__search__anchor {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.section-wrapper__nav__list__sub-menu__list__anchor {
   text-decoration: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: var(--anchor);
-  padding-right: 25px;
-  font-size: 20px;
-  background-color: var(--color-primary-light);
-  border-top-right-radius: var(--font-md);
-  border-bottom-right-radius: var(--font-md);
-  color: #ffff;
+  color: var(--color-primary-main);
+}
+
+.section-wrapper__nav__list__sub-menu__list__anchor:hover {
+  text-decoration: underline;
 }
 
 .master {
@@ -282,8 +266,6 @@ body {
 }
 
 .section__wrapper {
-  width: 80%;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,13 +491,21 @@ body {
 }
 
 .footer {
+  padding: 24px 0;
+  background-color: var(--color-footer);
+  color: var(--color-primary-text);
+}
+
+.footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 50vh;
-  background-color: var(--color-footer);
-  padding: 8px 0 0 80px;
-  color: var(--color-primary-text);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .footer__logo-ipbjda__title {
@@ -536,16 +526,6 @@ body {
 }
 
 .footer__logo-ipb {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  padding-right: 70px;
+  height: 100px;
 }
 /*# sourceMappingURL=style.css.map */
