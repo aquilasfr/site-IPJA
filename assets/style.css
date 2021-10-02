@@ -92,8 +92,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   /* & p {
-                display: none;
-            } */
+              display: none;
+          } */
 }
 
 .section-wrapper__nav__list__item {
