@@ -14,6 +14,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 
 .container {
@@ -265,6 +266,22 @@ body {
   background-color: #97ccb2;
 }
 
+@media screen and (max-width: 414px) {
+  .section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 1em;
+    width: auto;
+  }
+}
+
 .section__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -301,8 +318,27 @@ body {
   padding-bottom: 30px;
 }
 
+@media screen and (max-width: 414px) {
+  .section__wrapper__schedule__title {
+    font-size: 1.5rem !important;
+  }
+  .section__wrapper__schedule__monday {
+    font-size: 1rem;
+  }
+  .section__wrapper__schedule__paragraph, .section__wrapper__schedule__paragraph--ebd {
+    font-size: .9rem;
+  }
+}
+
 .section__schedule-pd {
   padding-top: 120px;
+}
+
+@media screen and (max-width: 414px) {
+  .section__schedule-pd {
+    padding-top: 104px;
+    margin-left: 2em;
+  }
 }
 
 .section__schedule-pd__title {
@@ -323,6 +359,15 @@ body {
   font-weight: bold;
   color: var(--color-primary-text);
   padding-bottom: 30px;
+}
+
+@media screen and (max-width: 414px) {
+  .section__schedule-pd__title {
+    font-size: 1rem;
+  }
+  .section__schedule-pd__paragraph, .section__schedule-pd__paragraph--member {
+    font-size: .9rem;
+  }
 }
 
 .chanel__img-wrapper {
@@ -417,6 +462,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -425,6 +472,14 @@ body {
 .section-officers__list__item img {
   width: 250px;
   margin: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 414px) {
+  .section-officers__list__item img {
+    width: 148px;
+  }
 }
 
 .section-officers__list__item div {
@@ -491,7 +546,7 @@ body {
 }
 
 .footer {
-  padding: 24px 0;
+  padding: 24px 1em;
   background-color: var(--color-footer);
   color: var(--color-primary-text);
 }

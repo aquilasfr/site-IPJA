@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const navBarToggleIconsE1 = document.querySelectorAll('.navbar-toogle')
-  navBarToggleIconsE1.forEach(e1 => {[
-      e1.addEventListener('click',() => {
-          const mobileSidebarE1 = document.querySelector('.section-wrapper__nav__list')
+  const navBarToggleIconsEl = document.querySelectorAll('.navbar-toogle')
+  navBarToggleIconsEl.forEach(el => {
+    el.addEventListener('click', () => {
+        const mobileSidebarEl = document.querySelector('.section-wrapper__nav__list')
 
-          mobileSidebarE1.classList.toggle('sidebar-active')
-      })
-  ]}) 
+        mobileSidebarEl.classList.toggle('sidebar-active')
+    })
+  })
 })

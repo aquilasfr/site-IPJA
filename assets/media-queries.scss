@@ -1,194 +1,192 @@
 @media screen and (max-width: 600px) {
-    .header {
-        display: none;
-    }
-    .section-wrapper {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: row-reverse;
-        width: 100%;
-        height: 22vh;
-        &__title {
-            width: 70%;
-        }
-        &__nav {
-            width: 50%;
-            &__list {
-                position: absolute;
-                right: -90%;
-                top: 0;
-                display: flex;
-                flex-direction: column;
-                z-index: 2;
-                background-color: #f3f3f3;
-                width: 90%;
-                height: 100vh;
-                margin-bottom: 40px;
-                transition: all 1s ease-in-out;
-                & .i {
-                    color: #468569;
-                    font-size: 2em;
-                }
-                &__item {
-                    padding: 10px;
-                }
-                & p {
-                    color: #468569;
-                    font-weight: 600;
-                    font-size: 0.8rem;
-                    padding: 8px;                                           
-                }
-            }
-        }
-        .fas.fa-bars {
-            font-size: 2em;
-            text-align: right;
-            color: #c4c4c4;
-            padding: 20px 11px;
-            display: block;
-        }
-        .sidebar-active {
-            right: 0 !important;
-        }
-    }
-    .shadow {
-        display: none;
-    }    
-    .wrapper {
-        &__slider {
-            &__item {
-                &__text {
-                    padding:0 12px;
-                & h3 {
-                    font-size: 2rem;
-                    font-weight: 600;
-                    }
-                }
-                & p {
-                    font-size: 1.2rem;
-                }
-            }
-            & .owl-dots {
-                position: absolute;
-                left: 50%;
-                bottom: 10px;
-            }
-        }
-    }
-
-    .section {
-        &__wrapper {
-            display: flex;
-            &__schedule {
-                h3 {
-                    font-size: 2rem;
-                }
-                &-pd {
-                    padding: 0;
-                    margin: 0;
-                }
-            }
-        }   
-    }
-    .section {
-        &__list {
-            &__item {
-                font-size: 1.4rem;
-                line-height: 2rem;
-            }
-        }
-    }
-    .chanel {
-        display: none;
-    }
-
-    .our-mission {
-        &__title {
-            font-size: 2rem;
-        }
-        &__paragraph {
-            font-size: 1rem;
-        }
-    }
-    .whatsapp-link {
-        bottom: 20px;
-    }
-    
-    .fa-whatsapp {
-        margin-top: 16px;
-    }
-
-    .footer {
-      height: 100%;
-      padding: 20px;
-      &__logo-ipbjda {
-        & img {
-            height: 100px;
-        }
+  .header {
+      display: none;
+  }
+  .section-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+      width: 100%;
+      height: 22vh;
+      &__title {
+          width: 70%;
       }
-      &__logo-ipb {
-            & img {
-                height: 100px;
-            }
-        }
+      &__nav {
+          width: 50%;
+          &__list {
+              position: absolute;
+              right: 100%;
+              top: 0;
+              display: flex;
+              flex-direction: column;
+              z-index: 2;
+              background-color: #f3f3f3;
+              width: 90%;
+              height: 100vh;
+              margin-bottom: 40px;
+              transition: all 1s ease-in-out;
+
+              & .i {
+                  color: #468569;
+                  font-size: 2em;
+              }
+              &__item {
+                  padding: 10px;
+              }
+              & p {
+                  color: #468569;
+                  font-weight: 600;
+                  font-size: 0.8rem;
+                  padding: 8px;
+              }
+          }
+      }
+      .fas.fa-bars {
+          font-size: 2em;
+          text-align: right;
+          color: #c4c4c4;
+          padding: 20px 11px;
+          display: block;
+      }
+      .sidebar-active {
+          right: 10% !important;
+      }
+  }
+  .shadow {
+      display: none;
+  }
+  .wrapper {
+      &__slider {
+          &__item {
+              &__text {
+                  padding:0 12px;
+              & h3 {
+                  font-size: 2rem;
+                  font-weight: 600;
+                  }
+              }
+              & p {
+                  font-size: 1.2rem;
+              }
+          }
+          & .owl-dots {
+              position: absolute;
+              left: 50%;
+              bottom: 10px;
+          }
+      }
+  }
+
+  .section {
+      &__wrapper {
+          display: flex;
+          &__schedule {
+              h3 {
+                  font-size: 2rem;
+              }
+              &-pd {
+                  padding: 0;
+                  margin: 0;
+              }
+          }
+      }
+  }
+  .section {
+      &__list {
+          &__item {
+              font-size: 1.4rem;
+              line-height: 2rem;
+          }
+      }
+  }
+  .chanel {
+      display: none;
+  }
+
+  .our-mission {
+      &__title {
+          font-size: 2rem;
+      }
+      &__paragraph {
+          font-size: 1rem;
+      }
+  }
+  .whatsapp-link {
+      bottom: 20px;
+  }
+
+  .fa-whatsapp {
+      margin-top: 16px;
+  }
+
+  .footer {
+    height: 100%;
+    padding: 20px;
+    &__logo-ipbjda {
+      & img {
+          height: 100px;
+      }
     }
-    /* Media-query page about-us */
-    .main {
-        width: 100%;
-        &__our-history {
-            height: 100px;
-            &__title {
-                font-size: 1.5rem;
-            }
-        }
-        &__paragraph {
-            padding: 20px 7px 8px;
-            font-size: 1rem;
-            text-align: center;
-            line-height: 2rem;
-        }
-        .start {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-top: 12px;
-        }
-        .grid-image {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            margin: 5px;
-            &__photos {
-                display: flex;
-                justify-content: center;
-                margin: 0;
-                img {
-                    width: 90%;
-                    margin: 6px 0;
-                }
-            }
-        }
-        .our-mission {
-            height: 100px;
-            &__title {
-                font-size: 1.5rem;
-            }
-        }
-        /* Media-query page agenda */
-        .grid-timeTable {
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            &__banner {
-                width: 120px;
-                height: 120px;
-                margin: 8px;
-                background-color: var(--color-primary-main);
-            }
-        }
-    }
-    .schedule-week {
-        height: 470px;
-    }
+    &__logo-ipb {
+          & img {
+              height: 100px;
+          }
+      }
+  }
+  /* Media-query page about-us */
+  .main {
+      width: 100%;
+      &__our-history {
+          height: 100px;
+          &__title {
+              font-size: 1.5rem;
+          }
+      }
+      &__paragraph {
+          padding: 20px 7px 8px;
+          font-size: 1rem;
+          text-align: center;
+          line-height: 2rem;
+      }
+      .start {
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin-top: 12px;
+      }
+      .grid-image {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin: 5px;
+          &__photos {
+              display: flex;
+              justify-content: center;
+              margin: 0;
+              img {
+                  width: 90%;
+                  margin: 6px 0;
+              }
+          }
+      }
+      .our-mission {
+          height: 100px;
+          &__title {
+              font-size: 1.5rem;
+          }
+      }
+      /* Media-query page agenda */
+      .grid-timeTable {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          &__banner {
+              width: 120px;
+              height: 120px;
+              margin: 8px;
+              background-color: var(--color-primary-main);
+          }
+      }
+  }
 
 }
 
