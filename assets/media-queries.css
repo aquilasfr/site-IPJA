@@ -98,6 +98,9 @@
     font-size: 1.4rem;
     line-height: 2rem;
   }
+  .section-officers__title {
+    font-size: 2.5rem;
+  }
   .chanel {
     display: none;
   }
