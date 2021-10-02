@@ -130,6 +130,12 @@
   font-weight: bold;
 }
 
+.main__title-counseling {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 100px;
+}
+
 .paragraph-green {
   color: var(--color-primary-main);
   font-weight: 600;
