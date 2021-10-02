@@ -134,59 +134,69 @@
       }
   }
   /* Media-query page about-us */
-  .main {
-      width: 100%;
-      &__our-history {
-          height: 100px;
-          &__title {
-              font-size: 1.5rem;
-          }
-      }
-      &__paragraph {
-          padding: 20px 7px 8px;
-          font-size: 1rem;
-          text-align: center;
-          line-height: 2rem;
-      }
-      .start {
-          font-size: 1.5rem;
-          font-weight: 600;
-          margin-top: 12px;
-      }
-      .grid-image {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          margin: 5px;
-          &__photos {
-              display: flex;
-              justify-content: center;
-              margin: 0;
-              img {
-                  width: 90%;
-                  margin: 6px 0;
-              }
-          }
-      }
-      .our-mission {
-          height: 100px;
-          &__title {
-              font-size: 1.5rem;
-          }
-      }
-      /* Media-query page agenda */
-      .grid-timeTable {
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          &__banner {
-              width: 120px;
-              height: 120px;
-              margin: 8px;
-              background-color: var(--color-primary-main);
-          }
-      }
-  }
-
+    .main {
+        width: 100%;
+        &__our-history {
+            height: 100px;
+            &__title {
+                font-size: 1.5rem;
+            }
+        }
+        &__paragraph {
+            padding: 20px 7px 8px;
+            font-size: 1rem;
+            text-align: center;
+            line-height: 2rem;
+        }
+        .start {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-top: 12px;
+        }
+        .grid-image {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            &__photos {
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                img {
+                    width: 90%;
+                    margin: 6px 0;
+                }
+            }
+            }
+        .our-mission {
+            height: 100px;
+            &__title {
+                font-size: 1.5rem;
+            }
+        }
+        /* Media-query page agenda */
+        .grid-timeTable {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            &__banner {
+                width: 120px;
+                height: 120px;
+                margin: 8px;
+                background-color: var(--color-primary-main);
+            }
+        }
+        &__title-counseling {
+            font-size: 1.2rem;
+            padding: 0 10px;
+        }
+        &__paragraph-social-projects {
+            font-size: 1rem;
+            padding: 18px 10px;
+            line-height: 1.8;
+        }
+        &__anchor-whatsapp {
+            font-size: 1rem;
+        }
+    }
 }
 

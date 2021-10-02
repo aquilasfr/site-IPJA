@@ -79,6 +79,12 @@
   font-size: 5rem;
 }
 
+.main__title-counseling {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 100px;
+}
+
 .master-start {
   display: -webkit-box;
   display: -ms-flexbox;

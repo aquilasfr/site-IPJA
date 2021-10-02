@@ -153,7 +153,6 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 5px;
   }
   .main .grid-image__photos {
     display: -webkit-box;
@@ -188,6 +187,18 @@
     height: 120px;
     margin: 8px;
     background-color: var(--color-primary-main);
+  }
+  .main__title-counseling {
+    font-size: 1.2rem;
+    padding: 0 10px;
+  }
+  .main__paragraph-social-projects {
+    font-size: 1rem;
+    padding: 18px 10px;
+    line-height: 1.8;
+  }
+  .main__anchor-whatsapp {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=media-queries.css.map */
